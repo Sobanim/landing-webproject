@@ -1,0 +1,1 @@
+.flex{display:flex;justify-content:space-between}.flex-vertical{flex-direction:column}@media (max-width:767px){.mobile-hidden{display:none}}
