@@ -10,8 +10,7 @@
   flex-direction: column;
 }
 
-p {
-  font: 2.5rem;
+* {
   font-family: 'Montserrat', sans-serif;
 }
 
