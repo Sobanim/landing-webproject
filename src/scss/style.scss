@@ -1,5 +1,138 @@
-@import 'general.scss';
+* {
+    font-family: "Montserrat", sans-serif;
+}
+h1{
+    margin: 0;
+}
 
-*{
-    font-family: 'Montserrat', sans-serif;
+.main {
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        margin: 1rem 0 1rem 5rem;
+    }
+    .nav {
+    }
+    .nav__list {
+    }
+    .nav__link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: black;
+        margin-right: 3.5rem;
+        padding: 1rem 0;
+        transition: all 0.5s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+            color: #004b27;
+            transition: all 0.5s ease;
+        }
+    }
+    .nav__link--current {
+        font-weight: 700;
+        color: #004b27;
+    }
+    .address {
+        margin-left: 8rem;
+    }
+    .address__city {
+        font-size: 1.2rem;
+        color: black;
+    }
+    .worktime {
+        display: flex;
+        font-size: 1.2rem;
+        color: black;
+    }
+    .worktime__days {
+        margin-right: 1rem;
+    }
+    .worktime__time {
+    }
+    .contact {
+    }
+    .contact__icon {
+    }
+    .contact__tel {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    & .contact__icon {
+        margin-right: 0.3rem;
+    }
+    .online {
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem 1rem 0;
+        background-color: #004b27;
+        font-size: 1.2rem;
+        height: 100%;
+        color: white;
+        & p {
+            margin: 0 0.5rem 0 0;
+            font-size: 1.5rem;
+        }
+        & a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+    .banner {
+        background-image: url(../img/banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner__title {
+        padding-top: 20rem;
+        color: rgba(252, 252, 252, 0.8);
+        font-weight: 900;
+        font-size: 4rem;
+        text-transform: uppercase;
+        padding-left: 12rem;
+    }
+    .banner__decrtiption {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: white;
+        font-weight: 300;
+        width: 47%;
+        margin-left: 12rem;
+    }
+    .banner__link {
+        display: inline-block;
+        margin-top: 3.5rem;
+        margin-left: 12rem;
+        border: 1px solid white;
+        padding: 1.7rem 5.7rem;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 12rem;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #004b27;
+            transition: 0.3s;
+        }
+    }
+    .social-links {
+    }
+    .social-links__fb {
+    }
+    .social-links__ins {
+    }
 }

@@ -73,6 +73,7 @@ function css(){
             })
         )
         .pipe(dest(path.build.css))
+        .pipe(browsersync.stream())
         .pipe(clean_css())
         .pipe(
             rename({
