@@ -6,6 +6,10 @@ h1 {
   margin: 0;
 }
 
+.main {
+  position: relative;
+}
+
 .main header {
   background-color: white;
   display: flex;
@@ -137,4 +141,14 @@ h1 {
   background-color: rgba(255, 255, 255, 0.7);
   color: #004b27;
   transition: 0.3s;
+}
+
+.main .social-links {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+.main .social-links img {
+  height: 4rem;
 }
