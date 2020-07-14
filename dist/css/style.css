@@ -2,7 +2,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+h1,
+body {
   margin: 0;
 }
 
@@ -17,6 +18,7 @@ h1 {
   align-items: center;
   margin: 0;
   padding: 0;
+  height: 6rem;
 }
 
 .main .logo {
@@ -81,9 +83,8 @@ h1 {
 .main .online {
   display: flex;
   align-items: center;
-  padding: 1rem 3rem 1rem 0;
+  padding: 0 2.5rem 0 2.5rem;
   background-color: #004b27;
-  font-size: 1.2rem;
   height: 100%;
   color: white;
 }
@@ -97,6 +98,13 @@ h1 {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.main .online a:hover {
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
 .main .banner {
