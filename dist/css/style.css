@@ -201,6 +201,20 @@ body {
   }
 }
 
+@media (max-width: 979px) {
+  .main .nav__list {
+    display: none;
+  }
+
+  .main .contact__tel {
+    display: none;
+  }
+
+  .main .online {
+    display: none;
+  }
+}
+
 @media (max-height: 1081px) {
   .main .banner__link {
     margin-bottom: 15.5rem;
