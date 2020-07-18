@@ -19,15 +19,24 @@ body {
         @media (max-width: 979px) {
             height: 5rem;
         }
+        @media (max-width: 767px){
+            height: 3.6rem;
+        }
     }
     .logo {
         margin: 1rem 0 1rem 5rem;
         @media (max-width: 979px) {
             margin: 1rem 0 1rem 3rem;
         }
+        @media (max-width: 767px){
+            margin: 0.5rem 0 0.5rem 1.5rem;
+        }
         & img {
             @media (max-width: 979px) {
                 width: 7rem;
+            }
+            @media (max-width: 767px){
+                width: 6.5rem;
             }
         }
     }
@@ -151,6 +160,9 @@ body {
         // @media (max-width: 979px){
         //     background-position: left;
         // }
+        @media (max-width: 767px){
+            background-image: url(../img/banner-mobile.png);
+        }
     }
     .banner__title {
         padding-top: 20rem;
@@ -165,6 +177,9 @@ body {
             font-size: 2.5rem;
             padding-top: 10rem;
         }
+        @media (max-width: 767px) {
+            font-size: 1.6rem;
+        }
     }
     .banner__decrtiption {
         font-size: 1.5rem;
@@ -178,6 +193,11 @@ body {
             width: auto;
             margin: 4rem auto 0;
             padding: 0 10rem;
+        }
+        @media (max-width: 767px){
+            padding: 0 2rem;
+            font-size: 1rem;
+            line-height: 1.65rem;
         }
     }
     .banner__link {
@@ -209,6 +229,10 @@ body {
             font-size: 1rem;
             padding: 1.4rem 4rem;
         }
+        @media (max-width: 767px){
+            padding: 1rem 3rem;
+            margin-bottom: 10rem !important;
+        }
     }
     .social-links {
         position: absolute;
@@ -219,9 +243,15 @@ body {
             @media (max-width: 979px){
                 height: 3.5rem;
             }
+            @media (max-width: 767px){
+                height: 3rem;
+            }
         }
         @media (max-width: 979px){
             right: 5rem;
+        }
+        @media (max-width: 767px){
+            right: 1rem;
         }
     }
 }
