@@ -49,6 +49,11 @@ body {
   color: #004b27;
 }
 
+.main .burger {
+  display: none;
+  margin-right: 2.5rem;
+}
+
 .main .address {
   margin-left: 8rem;
 }
@@ -189,7 +194,7 @@ body {
 @media (max-width: 1200px) {
   .main .nav__link {
     font-size: 1rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 
   .main .contact__tel {
@@ -207,23 +212,11 @@ body {
   }
 
   .main .logo {
-    margin: 1rem 0 1rem 3rem;
+    margin: 1rem 0 1rem 1.5rem;
   }
 
   .main .logo img {
     width: 7rem;
-  }
-
-  .main .nav__list {
-    display: none;
-  }
-
-  .main .contact__tel {
-    display: none;
-  }
-
-  .main .online {
-    display: none;
   }
 
   .main .banner__title {
@@ -270,6 +263,52 @@ body {
 
   .main .logo img {
     width: 6.5rem;
+  }
+
+  .main .nav__list {
+    display: none;
+  }
+
+  .main .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .main .burger:before,
+  .main .burger:after {
+    content: '';
+    background-color: #004b27;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+  }
+
+  .main .burger:before {
+    top: 0;
+  }
+
+  .main .burger:after {
+    bottom: 0;
+  }
+
+  .main .burger span {
+    position: absolute;
+    background-color: #004b27;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+  }
+
+  .main .contact {
+    display: none;
+  }
+
+  .main .online {
+    display: none;
   }
 
   .main .banner {
