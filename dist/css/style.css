@@ -54,6 +54,10 @@ body {
   margin-right: 2.5rem;
 }
 
+.main .burger.active span {
+  transform: scale(0);
+}
+
 .main .address {
   margin-left: 8rem;
 }
@@ -110,6 +114,10 @@ body {
 .main .online a:hover {
   transition: 0.3s;
   text-decoration: underline;
+}
+
+.main .mobile-menu__nav__list {
+  display: none;
 }
 
 .main .banner {
@@ -278,7 +286,7 @@ body {
 
   .main .burger:before,
   .main .burger:after {
-    content: '';
+    content: "";
     background-color: #004b27;
     position: absolute;
     width: 100%;
@@ -303,12 +311,32 @@ body {
     top: 9px;
   }
 
+  .main .burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .main .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
   .main .contact {
     display: none;
   }
 
   .main .online {
     display: none;
+  }
+
+  .main .mobile-menu__nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main .nav__link {
+    margin-right: 0;
   }
 
   .main .banner {
