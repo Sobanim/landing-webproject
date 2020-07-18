@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.burger').click(function(event){
-        $('.mobile-menu__nav__list,.burger').toggleClass('active');
+        $('.burger, .mobile-menu__nav').toggleClass('active');
+        // $('.mobile-menu__nav').slideToggle();
     })
 });

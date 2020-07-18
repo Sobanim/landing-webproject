@@ -12,6 +12,8 @@ body {
 }
 
 .main header {
+  position: fixed;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -19,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   height: 6rem;
+  z-index: 30;
 }
 
 .main .logo {
@@ -44,7 +47,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.main .nav__link--current {
+.main .--current {
   font-weight: 700;
   color: #004b27;
 }
@@ -116,8 +119,16 @@ body {
   text-decoration: underline;
 }
 
-.main .mobile-menu__nav__list {
-  display: none;
+.main .mobile-menu__nav {
+  position: fixed;
+  top: -50%;
+  width: 100%;
+  transition: all 0.7s ease-in-out 0s;
+}
+
+.main .mobile-menu__nav.active {
+  top: 0;
+  background-color: white;
 }
 
 .main .banner {
@@ -125,6 +136,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 6rem;
 }
 
 .main .banner__title {
@@ -292,6 +304,7 @@ body {
     width: 100%;
     height: 3px;
     right: 0;
+    transition: all 0.5s ease 0s;
   }
 
   .main .burger:before {
@@ -309,6 +322,7 @@ body {
     width: 100%;
     height: 3px;
     top: 9px;
+    transition: all 0.5s ease 0s;
   }
 
   .main .burger.active:before {
@@ -333,6 +347,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3.6rem;
   }
 
   .main .nav__link {
@@ -341,6 +356,7 @@ body {
 
   .main .banner {
     background-image: url(../img/banner-mobile.png);
+    padding-top: 3.6rem;
   }
 
   .main .banner__title {
@@ -354,8 +370,9 @@ body {
   }
 
   .main .banner__link {
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     margin-bottom: 10rem !important;
+    font-size: 0.8rem;
   }
 
   .main .social-links img {
