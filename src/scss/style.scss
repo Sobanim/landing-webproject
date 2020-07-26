@@ -5,6 +5,9 @@ h1, h2,
 body {
     margin: 0;
 }
+body{
+    scroll-behavior: smooth;
+}
 
 .main {
     position: relative;
@@ -343,3 +346,73 @@ body {
     }
 }
 
+.beauty {
+    margin-top: 10rem;
+    padding: 0 10rem;
+    .beauty-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .beauty__slider {
+        width: 100%;
+    }
+    .slide-1 {
+        background: url('../img/krasa-slider.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .beauty-descr {
+        margin-left: 5rem;
+    .beauty__header {
+        background: url('../img/krasa-head.png') no-repeat;
+    }
+    .beuty__header__title {
+        padding-top: 5rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .beauty__text {
+    }
+    .beauty__list {
+        & ul{
+            list-style-image: url('../img/list-icon.png');
+            & li{
+                
+            }
+        }
+    }
+}
+    .beauty__counter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        & p{
+            margin: 0 0 1rem 0;
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    .counter {
+        // padding: 0 2rem ;
+        flex: 33.3%;
+        text-align: center;
+        &.--center{
+            border-left: 1px solid #333 ;
+            border-right: 1px solid #333;
+        }
+    }
+    .counter-value {
+        font-size: 3.5rem;
+    }
+    .customers {
+    }
+    .counter-text {
+        font-size: 2rem;
+    }
+    .workers {
+    }
+    .years {
+    }
+}

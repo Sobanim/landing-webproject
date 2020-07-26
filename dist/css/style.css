@@ -3,8 +3,13 @@
 }
 
 h1,
+h2,
 body {
   margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -185,6 +190,73 @@ body {
 
 .main .social-links img {
   height: 4rem;
+}
+
+.beauty {
+  margin-top: 10rem;
+  padding: 0 10rem;
+}
+
+.beauty .beauty-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beauty .beauty__slider {
+  width: 100%;
+}
+
+.beauty .slide-1 {
+  background: url("../img/krasa-slider.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.beauty .beauty-descr {
+  margin-left: 5rem;
+}
+
+.beauty .beauty-descr .beauty__header {
+  background: url("../img/krasa-head.png") no-repeat;
+}
+
+.beauty .beauty-descr .beuty__header__title {
+  padding-top: 5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.beauty .beauty-descr .beauty__list ul {
+  list-style-image: url("../img/list-icon.png");
+}
+
+.beauty .beauty__counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.beauty .beauty__counter p {
+  margin: 0 0 1rem 0;
+}
+
+.beauty .counter {
+  flex: 33.3%;
+  text-align: center;
+}
+
+.beauty .counter.--center {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.beauty .counter-value {
+  font-size: 3.5rem;
+}
+
+.beauty .counter-text {
+  font-size: 2rem;
 }
 
 @media (max-width: 1800px) {
@@ -381,6 +453,10 @@ body {
 
   .main .social-links {
     right: 1rem;
+  }
+
+  .beauty .beauty__counter {
+    flex-direction: column;
   }
 }
 
