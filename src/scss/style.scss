@@ -1,11 +1,12 @@
 * {
     font-family: "Montserrat", sans-serif;
 }
-h1, h2,
+h1,
+h2,
 body {
     margin: 0;
 }
-body{
+body {
     scroll-behavior: smooth;
 }
 
@@ -116,20 +117,19 @@ body{
                 transition: all 0.5s ease 0s;
             }
         }
-        &.active:before{
+        &.active:before {
             @media (max-width: 767px) {
                 transform: rotate(45deg);
                 top: 9px;
             }
-            
         }
-        @media (max-width: 767px){
-            &.active:after{
+        @media (max-width: 767px) {
+            &.active:after {
                 transform: rotate(-45deg);
                 bottom: 9px;
             }
         }
-        &.active span{
+        &.active span {
             transform: scale(0);
         }
     }
@@ -219,7 +219,7 @@ body{
         top: -50%;
         width: 100%;
         transition: all 0.7s ease-in-out 0s;
-        &.active{
+        &.active {
             top: 0;
             background-color: white;
         }
@@ -233,7 +233,7 @@ body{
         }
     }
     .nav__link {
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
             margin-right: 0;
         }
     }
@@ -347,47 +347,59 @@ body{
 }
 
 .beauty {
-    margin-top: 10rem;
+    margin-top: 7rem;
     padding: 0 10rem;
     .beauty-content {
         display: flex;
         justify-content: space-between;
     }
     .beauty__slider {
-        width: 100%;
+        // width: 100%;
+        flex: 0 0 29%;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
+
     .slide-1 {
-        background: url('../img/krasa-slider.png') no-repeat;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
     }
     .beauty-descr {
         margin-left: 5rem;
-    .beauty__header {
-        background: url('../img/krasa-head.png') no-repeat;
-    }
-    .beuty__header__title {
-        padding-top: 5rem;
-        font-weight: 700;
-        font-size: 2.5rem;
-    }
-    .beauty__text {
-    }
-    .beauty__list {
-        & ul{
-            list-style-image: url('../img/list-icon.png');
-            & li{
-                
+        .beauty__header {
+            background: url("../img/krasa-head.png") no-repeat;
+        }
+        .beuty__header__title {
+            padding-top: 5rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            &::after {
+                // content: '';
+                // display: inline-block;
+                // width: 25px;
+                // border-bottom: 2px solid black;
+            }
+        }
+        .beauty__text {
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        }
+        .beauty__list {
+            & ul {
+                list-style-image: url("../img/list-icon.png");
+                & li {
+                }
             }
         }
     }
-}
     .beauty__counter {
         display: flex;
         justify-content: space-between;
         margin-top: 5rem;
-        & p{
+        & p {
             margin: 0 0 1rem 0;
         }
         @media (max-width: 767px) {
@@ -398,8 +410,8 @@ body{
         // padding: 0 2rem ;
         flex: 33.3%;
         text-align: center;
-        &.--center{
-            border-left: 1px solid #333 ;
+        &.--center {
+            border-left: 1px solid #333;
             border-right: 1px solid #333;
         }
     }
