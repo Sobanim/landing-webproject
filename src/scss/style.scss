@@ -240,7 +240,7 @@ body {
     .nav__link--current {
     }
     .banner {
-        background-image: url(../img/banner.png);
+        background-image: url(../img/banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -249,7 +249,7 @@ body {
         //     background-position: left;
         // }
         @media (max-width: 767px) {
-            background-image: url(../img/banner-mobile.png);
+            background-image: url(../img/banner-mobile.jpg);
             padding-top: 3.6rem;
         }
     }
@@ -354,8 +354,7 @@ body {
         justify-content: space-between;
     }
     .beauty__slider {
-        // width: 100%;
-        flex: 0 0 29%;
+        flex: 0 0 40%;
         & img {
             width: 100%;
             height: 100%;
@@ -389,8 +388,12 @@ body {
         }
         .beauty__list {
             & ul {
-                list-style-image: url("../img/list-icon.png");
+                list-style: none;
+                line-height: 2rem;
+                font-size: 1.2rem;
                 & li {
+                    background: url("../img/list-icon.png") 0 5px no-repeat;
+                    padding-left: 3rem;
                 }
             }
         }

@@ -137,7 +137,7 @@ body {
 }
 
 .main .banner {
-  background-image: url(../img/banner.png);
+  background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -203,7 +203,7 @@ body {
 }
 
 .beauty .beauty__slider {
-  flex: 0 0 29%;
+  flex: 0 0 40%;
 }
 
 .beauty .beauty__slider img {
@@ -233,7 +233,14 @@ body {
 }
 
 .beauty .beauty-descr .beauty__list ul {
-  list-style-image: url("../img/list-icon.png");
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.beauty .beauty-descr .beauty__list ul li {
+  background: url("../img/list-icon.png") 0 5px no-repeat;
+  padding-left: 3rem;
 }
 
 .beauty .beauty__counter {
@@ -432,7 +439,7 @@ body {
   }
 
   .main .banner {
-    background-image: url(../img/banner-mobile.png);
+    background-image: url(../img/banner-mobile.jpg);
     padding-top: 3.6rem;
   }
 
