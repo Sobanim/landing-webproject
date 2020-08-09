@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -221,10 +223,11 @@ body {
   background: url("../img/krasa-head.png") no-repeat;
 }
 
-.beauty .beauty-descr .beuty__header__title {
+.beauty .beauty-descr .beuty__title {
   padding-top: 5rem;
   font-weight: 700;
   font-size: 2.5rem;
+  color: #333333;
 }
 
 .beauty .beauty-descr .beauty__text p {
@@ -269,6 +272,53 @@ body {
 
 .beauty .counter-text {
   font-size: 1.2rem;
+}
+
+.service {
+  margin-top: 7rem;
+  padding: 0 10rem;
+}
+
+.service .service-head {
+  background: url("../img/služby.png") no-repeat center;
+  padding-top: 5rem;
+}
+
+.service .service-head h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.service .service__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* выровняем по центру */
+}
+
+.service .item {
+  flex: 1 1 calc(33.33% - 60px);
+  margin: 0px 17px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  min-width: 240px;
+}
+
+.service .item img {
+  width: 100%;
+  max-width: 650px;
+}
+
+.service .item__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service .item__description p {
+  margin: 0;
 }
 
 @media (max-width: 1800px) {
