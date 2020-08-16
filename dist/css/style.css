@@ -107,7 +107,7 @@ body {
 .main .online {
   display: flex;
   align-items: center;
-  padding: 0 2.5rem 0 2.5rem;
+  padding: 0 3rem 0 3rem;
   background-color: #004b27;
   height: 100%;
   color: white;
@@ -242,7 +242,7 @@ body {
 
 .beauty .beauty-descr .beauty__list ul {
   list-style: none;
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 1.2rem;
 }
 
@@ -286,7 +286,7 @@ body {
 
 .service .service-head {
   background: url("../img/služby.png") no-repeat center;
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .service .service-head h2 {
@@ -295,13 +295,13 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  margin-bottom: 3rem;
 }
 
 .service .service__items {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  /* выровняем по центру */
 }
 
 .service .item {
@@ -342,6 +342,12 @@ body {
   }
 }
 
+@media (max-width: 1600px) {
+  .service .service-head {
+    padding-top: 7rem;
+  }
+}
+
 @media (max-width: 1368px) {
   html {
     font-size: 12.037px;
@@ -352,6 +358,12 @@ body {
   }
 }
 
+@media (max-width: 1367px) {
+  .beauty .beauty-descr .beauty__list ul {
+    padding-left: 1rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .main .address {
     display: none;
@@ -359,6 +371,14 @@ body {
 
   .main .worktime {
     display: none;
+  }
+
+  .beauty {
+    padding: 0 5rem;
+  }
+
+  .service {
+    padding: 0 5rem;
   }
 }
 
@@ -415,6 +435,16 @@ body {
 
   .main .social-links {
     right: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .beauty {
+    padding: 0 3rem;
+  }
+
+  .service {
+    padding: 0 3rem;
   }
 }
 

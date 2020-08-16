@@ -193,7 +193,7 @@ body {
     .online {
         display: flex;
         align-items: center;
-        padding: 0 2.5rem 0 2.5rem;
+        padding: 0 3rem 0 3rem;
         background-color: #004b27;
         height: 100%;
         color: white;
@@ -360,6 +360,12 @@ body {
 .beauty {
     margin-top: 7rem;
     padding: 0 10rem;
+    @media (max-width: 1300px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 900px) {
+        padding: 0 3rem;
+    }
     .beauty-content {
         display: flex;
         justify-content: space-between;
@@ -401,8 +407,11 @@ body {
         .beauty__list {
             & ul {
                 list-style: none;
-                line-height: 2rem;
+                line-height: 2.2rem;
                 font-size: 1.2rem;
+                @media (max-width: 1367px){
+                    padding-left: 1rem
+                }
                 & li {
                     background: url("../img/list-icon.png") 0 no-repeat;
                     padding-left: 3rem;
@@ -447,9 +456,18 @@ body {
 .service {
     margin-top: 7rem;
     padding: 0 10rem;
+    @media (max-width: 1300px) {
+        padding: 0 5rem;
+    }
+    @media (max-width: 900px) {
+        padding: 0 3rem;
+    }
     .service-head {
         background: url("../img/služby.png") no-repeat center;
-        padding-top: 5rem;
+        padding-top: 6rem;
+        @media (max-width:1600px) {
+            padding-top: 7rem;
+        }
         & h2 {
             // padding-top: 5rem;
             font-weight: 700;
@@ -457,19 +475,13 @@ body {
             text-align: center;
             text-transform: uppercase;
             color: #333333;
+            margin-bottom: 3rem;
         }
     }
     .service__items {
-        // margin-top: 5rem;
-        // display: flex;
-        // margin: 0 auto;
-        // max-width: 1600px;
-        // // justify-content: space-between;
-        // flex-wrap: wrap;
-
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto; /* выровняем по центру */
+        margin: 0 auto;
     }
     .item {
         flex: 1 1 calc(33.33% - 60px);
