@@ -366,9 +366,15 @@ body {
     @media (max-width: 900px) {
         padding: 0 3rem;
     }
+    @media (max-width: 767px) {
+        padding: 0 1rem
+    }
     .beauty-content {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
     .beauty__slider {
         flex: 0 0 40%;
@@ -383,8 +389,15 @@ body {
     }
     .beauty-descr {
         margin-left: 5rem;
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
         .beauty__header {
             background: url("../img/krasa-head.png") no-repeat;
+            @media (max-width: 767px) {
+                background-position: top;
+                background-size: 17rem;
+            }
         }
         .beuty__title {
             padding-top: 5rem;
@@ -462,11 +475,18 @@ body {
     @media (max-width: 900px) {
         padding: 0 3rem;
     }
+    @media (max-width: 767px) {
+        padding: 0 1rem;
+    }
     .service-head {
         background: url("../img/služby.png") no-repeat center;
         padding-top: 6rem;
         @media (max-width:1600px) {
             padding-top: 7rem;
+        }
+        @media (max-width: 767px) {
+            padding-top: 4rem;
+            background-size: 17rem;
         }
         & h2 {
             // padding-top: 5rem;

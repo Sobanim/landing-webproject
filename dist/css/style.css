@@ -566,8 +566,34 @@ body {
     right: 1rem;
   }
 
+  .beauty {
+    padding: 0 1rem;
+  }
+
+  .beauty .beauty-content {
+    flex-direction: column;
+  }
+
+  .beauty .beauty-descr {
+    margin-left: 0;
+  }
+
+  .beauty .beauty-descr .beauty__header {
+    background-position: top;
+    background-size: 17rem;
+  }
+
   .beauty .beauty__counter {
     flex-direction: column;
+  }
+
+  .service {
+    padding: 0 1rem;
+  }
+
+  .service .service-head {
+    padding-top: 4rem;
+    background-size: 17rem;
   }
 }
 
