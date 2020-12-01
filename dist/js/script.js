@@ -1,29 +1,23 @@
-var check = 1;
-var target = $('.years, .customers, .workers'); // You counter class
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-
-$(window).scroll(function() {
-  var winScrollTop = $(this).scrollTop();
-  if(winScrollTop > scrollToElem && check) {
-    $('.years, .customers, .workers').each(function() {
-      $(this).prop('Counter', -1).animate({
-        Counter: $(this).text()
-      },{
-        duration: 3000,
-        easing: 'swing',
-        step: function(now) {
-          $(this).text(Math.ceil(now));
-        }
-      });
-    });
-    check = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  // For mobile menu
+  let burger = document.querySelector('.burger')
+  let mobileMenu = document.querySelector('.mobile-menu__nav')
+  burger.onclick = function () {
+      if(burger.classList.contains('active')){
+          burger.classList.remove('active')
+          mobileMenu.classList.remove('active')
+      } else{
+          burger.classList.add('active')
+          mobileMenu.classList.add('active')
+      }
   }
-});
 
-$(document).ready(function(){
-    $('.burger').click(function(event){
-        $('.burger, .mobile-menu__nav').toggleClass('active');
-    })
-});
+  let number = document.querySelector('.customers'),
+  numberTop = number.getBoundingClientRect().top,
+  start = +number.innerHTML, end = +number.dataset.max
+
+  console.log(number);
+  console.log(numberTop);
+  console.log(start);
+  console.log(end);
+})
