@@ -1,3 +1,5 @@
+import { CountUp } from './countUp.umd'
+
 document.addEventListener("DOMContentLoaded", function () {
   // For mobile menu
   let burger = document.querySelector('.burger')
@@ -12,12 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
-  let number = document.querySelector('.customers'),
-  numberTop = number.getBoundingClientRect().top,
-  start = +number.innerHTML, end = +number.dataset.max
-
-  console.log(number);
-  console.log(numberTop);
-  console.log(start);
-  console.log(end);
+  document.querySelector('.service-head').addEventListener('click', animateNumbers)
+  function animateNumbers() {
+      let demo = new CountUp('counter', 12357)
+      if (!demo.error) {
+          demo.start()
+      }else{
+          console.error(demo.error)
+      }
+  }
 })
