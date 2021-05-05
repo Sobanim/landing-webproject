@@ -1,4 +1,4 @@
-import { CountUp } from './countUp.umd'
+//import { CountUp } from './countUp.umd'
 
 document.addEventListener("DOMContentLoaded", function () {
   // For mobile menu
